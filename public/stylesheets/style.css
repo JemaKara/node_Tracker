@@ -1,0 +1,259 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00b7ff;
+}
+
+/*Icon Page*/
+
+.iconPage {
+  background-color: black;
+  height: 240px;
+  padding: 40px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.iconRow {
+  color: gray;
+  text-align: center;
+}
+
+.icon {
+  margin-bottom: 16px;
+}
+
+.streetLegal {
+  color: grey;
+  margin-left: 4%;
+}
+
+/*TeamLinkPage*/
+
+.teamLinkContainer {
+  background-color: black;
+  color: gray;
+  padding: 40px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.feedbackTerminLinkContainer {
+  text-align: center;
+  border-bottom: 1px solid grey;
+  border-width: 110%;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.teamContainer {
+  margin-top: 16px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.teamMember {
+  text-align: center;
+}
+
+.nameTeamMember {
+  margin-top: 8px;
+}
+
+.teamImage {
+  width: auto;
+  height: 240px;
+  border-radius: 20%;
+}
+
+.textTeamMembers {
+  margin-top: 16px;
+  font-size: 20px;
+}
+
+#firstCarousel {
+  z-index: 2;
+}
+
+.topContainer {
+  position: absolute;
+  margin-top: 16px;
+  width: 100%;
+  z-index: 1;
+}
+
+.footerContainer {
+  margin-left: -15px;
+  margin-right: -15px;
+  background-color: black;
+  color: gray;
+  text-align: -webkit-center;
+  padding: 40px;
+}
+
+.footerRowContainer {
+  align-items: stretch;
+}
+
+.wolfLogoFooter {
+  width: 400px;
+  height: auto;
+}
+
+.footerInstagram {
+  margin-top: 10%;
+  font-size: xx-large;
+}
+
+.footerLinks {
+  margin-top: 10%;
+}
+
+.motoImage {
+  width: auto;
+  float: left;
+  height: 370px;
+  margin: 10px;
+}
+
+.motoContainer {
+  margin-left: -15px;
+  margin-right: -15px;
+  background-color: white;
+  text-align: -webkit-left;
+  padding: 40px;
+}
+
+.motoRowContainer {
+  align-items: stretch;
+}
+
+.instTextRight {
+  color: white;
+  float: right;
+  padding: 20px;
+  margin-right: 300px;
+}
+.instTextLeft {
+  color: white;
+  float: left;
+  padding: 20px;
+  margin-left: 210px;
+}
+
+.instLabel {
+  margin-bottom: 16px;
+  margin-top: 5%;
+}
+.topPage {
+  height: 150px;
+  width: 100%;
+  margin-left: -15px;
+}
+
+.wolfLogoTop {
+  float: left;
+  height: auto;
+  width: 300px;
+}
+.instTop {
+  float: right;
+  margin-top: 5%;
+  margin-left: 400px;
+}
+.topLinks {
+  color: black;
+  margin-left: -15px;
+  float: right;
+  padding: 40px;
+  margin-right: -15px;
+}
+#navigation a {
+  color: black;
+  margin: 60px auto;
+}
+
+#top {
+  text-align: -webkit-right;
+  margin-left: 185px;
+  margin-right: 6px;
+}
+
+#myInput {
+  background-image: url("/css/searchicon.png"); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myTable {
+  border-collapse: collapse; /* Collapse borders */
+  width: 100%; /* Full-width */
+  border: 1px solid #ddd; /* Add a grey border */
+  font-size: 18px; /* Increase font-size */
+}
+
+#myTable th,
+#myTable td {
+  text-align: left; /* Left-align text */
+  padding: 12px; /* Add padding */
+}
+
+#myTable tr {
+  /* Add a bottom border to all table rows */
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header,
+#myTable tr:hover {
+  /* Add a grey background color to the table header and on hover */
+  background-color: #f1f1f1;
+}
+
+.topPageCalculator {
+  height: 150px;
+  width: 100%;
+  margin-left: -15px;
+}
+
+.calculatorContainerWrapper {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  width: 80px;
+  color: #f1f1f1;
+  padding: 32px;
+}
+
+#co2_calculator_result_container {
+  margin-top: 32px;
+  margin-left: 16px;
+}
+
+.calculateButton {
+  margin-top: 16px;
+}
+
+.inputCo2Calculator {
+  margin-top: 16px;
+}
+#co2_calculator_result_container {
+  background-color: rgba(66, 64, 64, 0.8);
+  border-radius: 20px;
+  padding: 16px;
+}
+
+.inputFieldCalculator {
+  background: rgb(66, 64, 64) !important;
+  border-color: rgb(66, 64, 64) !important;
+}
+
+.routerLinks {
+  text-decoration: none !important;
+  color: #dc3545 !important;
+}

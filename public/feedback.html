@@ -10,6 +10,7 @@
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
           type='text/css'>
     <script src="javascripts/feedback.js"></script>
+    <script src="tracker.js"></script>
 </head>
 
 <!--
@@ -37,7 +38,7 @@
 <body onLoad="feedback()">
 <div id="co2CalculatorWrapper" class="bg-image"   style="
     height: 1024px;
-    background-image: url('./images/Wolf-Workshop-20210515174054.jpg');
+    background-image: url('./bilder/Wolf-Workshop-20210515174054.jpg');
     background-size: auto 1024px;
     background-repeat: no-repeat;
   "
@@ -47,7 +48,7 @@
         <div class="topPageCalculator">
             <div class="row topRow">
                 <div class="col wolfLogoTop">
-                    <img src="./images/Running black Schrift.png" class="wolfLogoTop" />
+                    <img src="./bilder/7.jpg" class="wolfLogoTop" />
                 </div>
                 <div id="top">
                     <div id="navigation">
@@ -81,7 +82,7 @@
                         <label for="message">Write your message</label>
                         <textarea id="message" name="visitor_message" placeholder="Say whatever you want." required></textarea>
                     </div>
-                    <button type="submit">Send Message</button>
+                    <button type="submit" onclick="findTrigger('submitButton')">Send Message</button>
                 </form>
     </div>
 </div>
@@ -90,7 +91,7 @@
 <div class="container-fluid footerContainer">
     <div class="container row footerRowContainer">
         <div class="col footerColContainer">
-            <img src="./images/running white schrift.png" class="wolfLogoFooter" alt="WolfLogo" />
+            <img src="./bilder/running white schrift.png" class="wolfLogoFooter" alt="WolfLogo" />
             <h3>WULF moto</h3>
             <h4>86150 Augsburg</h4>
             <h4>Germany</h4>

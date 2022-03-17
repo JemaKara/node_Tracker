@@ -4,14 +4,12 @@ console.log('Server-side code running');
 
 const express = require('express');
 const bodyParser = require('body-parser');
-
+const helmet = require('helmet');
 const app = express();
 const MongoClient = require('mongodb').MongoClient;
 
-flatted = require('flatted'); // use this one or the one below
-circularJSON = require('circular-json');
-
-//app.use(bodyParser.urlencoded());
+app.use(helmet());
+app.use(bodyParser.urlencoded());
 
 app.use(bodyParser.json());
 
@@ -55,38 +53,15 @@ app.get('/', (req, res) => {
 
 
 // add a document to the DB collection recording the click event
-app.post('http://localhost:8080/clicked', function(req, res){
+app.post('/clicked', function(req, res){
 
-
-    // <==== req.body will be a parsed JSON object
-    const clickedE = circularJSON.stringify(res.json({requestBody: req.body}));
-
-
-    //response.send(request.body
-
-
-    //console.log(request.body);      // your JSON
 
     const click = {clickTime: new Date(),
-        clickedElement: clickedE};
+        clickedElement: req.body.name,
+         country: req.body.country};
 
-    // response.send(request.body);    // echo the result back
-
-    //click = circularJSON.stringify(clicked);
     console.log(click);
     console.log(db);
-
-    if (!req.body.click) {
-        return res.status(400).json({
-            status_code: 0,
-            error_msg: "Require Params Missing",
-        });
-    }
-
-    res.status(200).json({
-        status_code: 1,
-        data: req.body,
-    });
 
 
     db.collection('clicks').insertOne(click, (err, result) => {
@@ -98,16 +73,6 @@ app.post('http://localhost:8080/clicked', function(req, res){
     });
 
 });
-/*
-// get the click data from the database
-app.get('http://localhost:8080/clicks',async (req, res) => {
-    await db.collection('clicks').find().toArray((err, result) => {
-        //await Click.find().toArray((err, result) => {
-        if (err) return console.log(err);
-        res.send(result);
-    });
-});
 
- */
 
 

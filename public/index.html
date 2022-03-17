@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
     type='text/css'>
-  <script src="client.js"></script>
+  <script src="tracker.js"></script>
   <script src="javascripts/probefahrt.js"></script>
 </head>
 
@@ -38,7 +38,7 @@
   <div class="topPage">
     <div class="row topRow">
       <div class="col wolfLogoTop">
-          <img src="./images/running white schrift.png" class="wolfLogoTop" />
+          <img src="./bilder/running white schrift.png" class="wolfLogoTop" />
         </div>
       <div id="top">
         <div id="navigation">
@@ -65,16 +65,16 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="./images/011.jpg" alt="First slide">
+      <img class="d-block w-100" src="./bilder/11.jpg" alt="First slide" onclick="findTrigger('photo1')">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="./images/022.jpg" alt="Second slide">
+      <img class="d-block w-100" src="./bilder/2.jpg" alt="Second slide" onclick="findTrigger('photo2')">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="./images/033.jpg" alt="Third slide">
+      <img class="d-block w-100" src="./bilder/3.jpg" alt="Third slide" onclick="findTrigger('photo3')">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="./images/044.jpg" alt="Fourth slide">
+      <img class="d-block w-100" src="./bilder/4.jpg" alt="Fourth slide" onclick="findTrigger('photo4')">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -108,7 +108,7 @@
 <div class="motoContainer">
   <div class="container row motoRowContainer">
     <div class="col motoColContainer">
-      <img src="./images/Ride-Wolf-Kilian-Seiler20.08.20.204023.jpg" class="motoImage" >
+      <img src="./bilder/5.jpg" class="motoImage"  onclick="findTrigger('bike')">
     </div>
     <div class="col motoColContainer textMoto">
       <h5>Ride the wulf!</h5>
@@ -188,16 +188,16 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="d-block w-100" src="./images/01.jpg" alt="First slide">
+        <img class="d-block w-100" src="./bilder/6.jpg" alt="First slide">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="./images/02.jpg" alt="Second slide">
+        <img class="d-block w-100" src="./bilder/7.jpg" alt="Second slide">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="./images/03.jpg" alt="Third slide">
+        <img class="d-block w-100" src="./bilder/8.jpg" alt="Third slide">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="./images/04.jpg" alt="Fourth slide">
+        <img class="d-block w-100" src="./bilder/9.jpg" alt="Fourth slide">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -223,17 +223,17 @@
         <h1>Meet the team</h1>
         <div class="row">
           <div class="col teamMember">
-            <img src="./images/gründer kili cut.jpg" class="teamImage" alt="Gründer Kilian">
+            <img src="./bilder/10.jpg" class="teamImage" alt="Gründer Kilian">
             <h3 class="nameTeamMember">Kilian</h3>
             <h3>Onlineauftritte, Fotographie & Kaffee</h3>
           </div>
           <div class="col teamMember">
-            <img src="./images/Gründer stef.jpg" class="teamImage" alt="Gründer Stefan">
+            <img src="./bilder/11.jpg" class="teamImage" alt="Gründer Stefan">
             <h3 class="nameTeamMember">Stefan</h3>
             <h3>Enwticklung, Design & Adrenalin</h3>
           </div>
           <div class="col teamMember">
-            <img src="./images/pngwing.com.png" class="teamImage" alt="Mitgünder Gesucht.">
+            <img src="./bilder/12.jpg" class="teamImage" alt="Mitgünder Gesucht.">
             <h3 class="nameTeamMember">Mitgründer gesucht</h3>
             <h3>BWL-Hintergrund</h3>
           </div>
@@ -253,7 +253,7 @@
   <div id="workaroundOneImage" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="d-block w-100" src="./images/Wolf-Workshop-20210515151537.jpg" alt="First slide">
+        <img class="d-block w-100" src="./bilder/2.jpg" alt="First slide">
       </div>
     </div>
   </div>
@@ -261,7 +261,7 @@
   <div class="container-fluid footerContainer">
     <div class="container row footerRowContainer">
       <div class="col footerColContainer">
-        <img src="./images/running white schrift.png" class="wolfLogoFooter" alt="WolfLogo" />
+        <img src="./bilder/running white schrift.png" class="wolfLogoFooter" alt="WolfLogo" />
         <h3>WULF moto</h3>
         <h4>86150 Augsburg</h4>
         <h4>Germany</h4>
@@ -279,7 +279,7 @@
         <h3>Probefahrt Vereinbaren</h3>
         <h3>Warteliste</h3>
         <h3>Instagram</h3>
-        <a href="co2Calculator.html"><h3>CO2-Calculator</h3></a>
+        <a href="co2Calculator.html" onclick="findTrigger('calc')"><h3>CO2-Calculator</h3></a>
       </div>
     </div>
 
